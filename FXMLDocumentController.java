@@ -15,10 +15,16 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private Pane admin_menu,register_menu,teacher_menu,student_menu,consultant_menu,advisor_menu;
-
+    
     @FXML
     private AnchorPane admin_login_panel,register_login_panel;
-
+    
+    @FXML
+    private AnchorPane register_dashboard;
+    
+    @FXML
+    private JFXButton admin_login_btn,register_login_btn;
+    
     @FXML
     private JFXButton admin_login_cancel_btn,register_login_cancel_btn;
 
@@ -39,9 +45,22 @@ public class FXMLDocumentController implements Initializable {
             register_login_panel.setVisible(true);
         }
     }
+    //Login Button Action
+    @FXML
+    void loginAct(ActionEvent event) {
+        if(event.getSource() == admin_login_btn){
+            admin_login_panel.setVisible(false);
+        }
+        else if(event.getSource() == register_login_btn){
+            if(login()){
+                register_login_panel.setVisible(false);
+                register_dashboard.setVisible(true);
+            }
+        }
+    }
     //Cancel Button Action
     @FXML
-    void admin_login_cancel_act(ActionEvent event) {
+    void login_cancel_act(ActionEvent event) {
         if(event.getSource() == admin_login_cancel_btn){
             admin_login_panel.setVisible(false);
         }
