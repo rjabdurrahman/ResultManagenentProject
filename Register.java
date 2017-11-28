@@ -25,4 +25,13 @@ public class Register{
     public void regTeacherCourses(){
         //here
     }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+    
 }

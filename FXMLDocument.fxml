@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
@@ -105,16 +106,16 @@
          <children>
             <AnchorPane layoutX="215.0" layoutY="62.0" prefHeight="258.0" prefWidth="374.0" style="-fx-background-color: #ededed;">
                <children>
-                  <JFXTextField layoutX="97.0" layoutY="107.0" prefHeight="25.0" prefWidth="217.0" promptText="Username" styleClass="prompt">
+                  <JFXTextField fx:id="admin_username_field" layoutX="97.0" layoutY="107.0" prefHeight="25.0" prefWidth="217.0" promptText="Username" styleClass="prompt">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </JFXTextField>
-                  <JFXTextField layoutX="99.0" layoutY="146.0" prefHeight="25.0" prefWidth="217.0" promptText="Password" styleClass="prompt">
+                  <JFXPasswordField fx:id="admin_password_field" layoutX="99.0" layoutY="146.0" prefHeight="25.0" prefWidth="217.0" promptText="Password" styleClass="prompt">
                      <font>
                         <Font size="14.0" />
                      </font>
-                  </JFXTextField>
+                  </JFXPasswordField>
                   <JFXButton fx:id="admin_login_btn" layoutX="246.0" layoutY="198.0" onAction="#loginAct" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0747A6;" text="LogIn" textFill="WHITE">
                      <font>
                         <Font size="14.0" />
@@ -146,6 +147,14 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
+                  <JFXButton fx:id="admin_login_close_btn" contentDisplay="CENTER" layoutX="336.0" onAction="#login_cancel_act" prefHeight="30.0" prefWidth="35.0" style="-fx-background-color: #0747A6;" text=" " textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="CLOSE" size="18" />
+                     </graphic>
+                  </JFXButton>
                </children>
             </AnchorPane>
          </children>
@@ -155,11 +164,6 @@
             <AnchorPane layoutX="215.0" layoutY="62.0" prefHeight="258.0" prefWidth="374.0" style="-fx-background-color: #ededed;">
                <children>
                   <JFXTextField layoutX="97.0" layoutY="107.0" prefHeight="25.0" prefWidth="217.0" promptText="Username" styleClass="prompt">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </JFXTextField>
-                  <JFXTextField layoutX="99.0" layoutY="146.0" prefHeight="25.0" prefWidth="217.0" promptText="Password" styleClass="prompt">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -195,6 +199,19 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
+                  <JFXPasswordField layoutX="99.0" layoutY="146.0" prefHeight="25.0" prefWidth="217.0" promptText="Password" styleClass="prompt">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="register_login_close_btn" contentDisplay="CENTER" layoutX="336.0" onAction="#login_cancel_act" prefHeight="30.0" prefWidth="35.0" style="-fx-background-color: #0747A6;" text=" " textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="CLOSE" size="18" />
+                     </graphic>
+                  </JFXButton>
                </children>
             </AnchorPane>
          </children>
@@ -211,6 +228,29 @@
                   <Line endX="217.0" stroke="WHITE" />
                   <Line endX="217.0" layoutY="30.0" stroke="WHITE" />
                   <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="52.0" prefHeight="34.0" prefWidth="163.0" styleClass="menu" text="   Add Student" textFill="WHITE">
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_PLUS" size="14.0" />
+                     </graphic>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="admin_dashboard" layoutY="60.0" prefHeight="420.0" prefWidth="800.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <AnchorPane prefHeight="420.0" prefWidth="217.0" style="-fx-background-color: #0747A6;">
+               <children>
+                  <Label layoutX="40.0" layoutY="5.0" text="Admin Panel" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Line endX="217.0" stroke="WHITE" />
+                  <Line endX="217.0" layoutY="30.0" stroke="WHITE" />
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="52.0" prefHeight="34.0" prefWidth="163.0" styleClass="menu" text=" Add Register" textFill="WHITE">
                      <graphic>
                         <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_PLUS" size="14.0" />
                      </graphic>

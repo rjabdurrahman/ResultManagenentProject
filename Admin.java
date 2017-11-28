@@ -10,10 +10,22 @@ public class Admin{
         this.username = username;
         this.password = password;
     }
+    public void manageRegister(){
+        //here
+    }
     public void margeResult(){
         //here
     }
     public void publishResult(){
         //here
     }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+    
 }
