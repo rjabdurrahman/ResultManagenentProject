@@ -20,7 +20,7 @@ public class FXMLDocumentController implements Initializable {
     //Admin
     Admin admin = new Admin(111, "abdurrahman", "rahman09");
     //RegisterList
-    public ObservableList<Register> registerlist = FXCollections.observableArrayList();
+    public static ObservableList<Register> registerlist = FXCollections.observableArrayList();
 
     @FXML
     private Pane admin_menu, register_menu, teacher_menu, student_menu, consultant_menu, advisor_menu;
@@ -91,7 +91,30 @@ public class FXMLDocumentController implements Initializable {
         }
 
     }
-    //Register Buttion Action
+    //Admins Action
+    @FXML
+    private JFXTextField register_username_input;
+
+    @FXML
+    private JFXPasswordField register_password_input, register_cpassword_input;
+    
+    @FXML
+    private JFXButton register_reg_btn;
+    
+    @FXML
+    void adminAct(ActionEvent event) {
+        if(event.getSource()==register_reg_btn){
+            //Check existed username needed
+            if(register_password_input.getText().equals(register_cpassword_input.getText())){
+                admin.manageRegister(register_username_input.getText(), register_password_input.getText(), registerlist);
+                for(Register r: registerlist)
+                    System.out.println(r.getUsername());
+            }
+            else
+                System.out.println("NO");
+        }
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 

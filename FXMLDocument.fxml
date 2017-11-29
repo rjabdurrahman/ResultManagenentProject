@@ -107,29 +107,29 @@
          <children>
             <AnchorPane layoutX="215.0" layoutY="62.0" prefHeight="258.0" prefWidth="374.0" style="-fx-background-color: #ededed;">
                <children>
-                  <JFXTextField fx:id="admin_username_field" layoutX="97.0" layoutY="107.0" prefHeight="25.0" prefWidth="217.0" promptText="Username" styleClass="prompt">
+                  <JFXTextField fx:id="admin_username_field" layoutX="84.0" layoutY="100.0" prefHeight="25.0" prefWidth="230.0" promptText="Username" styleClass="prompt">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </JFXTextField>
-                  <JFXPasswordField fx:id="admin_password_field" layoutX="99.0" layoutY="146.0" prefHeight="25.0" prefWidth="217.0" promptText="Password" styleClass="prompt">
+                  <JFXPasswordField fx:id="admin_password_field" layoutX="86.0" layoutY="139.0" prefHeight="25.0" prefWidth="230.0" promptText="Password" styleClass="prompt">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </JFXPasswordField>
-                  <JFXButton fx:id="admin_login_btn" layoutX="246.0" layoutY="198.0" onAction="#loginAct" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0747A6;" text="LogIn" textFill="WHITE">
+                  <JFXButton fx:id="admin_login_btn" layoutX="244.0" layoutY="190.0" onAction="#loginAct" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0747A6;" text="LogIn" textFill="WHITE">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="admin_login_cancel_btn" layoutX="164.0" layoutY="198.0" onAction="#login_cancel_act" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0747A6;" text="Cancel" textFill="WHITE">
+                  <JFXButton fx:id="admin_login_cancel_btn" layoutX="162.0" layoutY="190.0" onAction="#login_cancel_act" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0747A6;" text="Cancel" textFill="WHITE">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </JFXButton>
-                  <MaterialDesignIconView fill="#0747a6" glyphName="ACCOUNT" layoutX="68.0" layoutY="131.0" size="22.0" />
-                  <MaterialDesignIconView fill="#0747a6" glyphName="KEY" layoutX="68.0" layoutY="170.0" size="22.0" />
-                  <JFXRadioButton layoutX="58.0" layoutY="70.0" text="Global">
+                  <MaterialDesignIconView fill="#0747a6" glyphName="ACCOUNT" layoutX="55.0" layoutY="124.0" size="22.0" />
+                  <MaterialDesignIconView fill="#0747a6" glyphName="KEY" layoutX="55.0" layoutY="163.0" size="22.0" />
+                  <JFXRadioButton layoutX="45.0" layoutY="63.0" text="Global">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -137,7 +137,7 @@
                         <ToggleGroup fx:id="admin_rype_toggle" />
                      </toggleGroup>
                   </JFXRadioButton>
-                  <JFXRadioButton layoutX="185.0" layoutY="70.0" text="Local" toggleGroup="$admin_rype_toggle">
+                  <JFXRadioButton layoutX="172.0" layoutY="63.0" text="Local" toggleGroup="$admin_rype_toggle">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -164,24 +164,24 @@
          <children>
             <AnchorPane layoutX="215.0" layoutY="62.0" prefHeight="258.0" prefWidth="374.0" style="-fx-background-color: #ededed;">
                <children>
-                  <JFXTextField layoutX="97.0" layoutY="107.0" prefHeight="25.0" prefWidth="217.0" promptText="Username" styleClass="prompt">
+                  <JFXTextField layoutX="84.0" layoutY="100.0" prefHeight="25.0" prefWidth="230.0" promptText="Username" styleClass="prompt">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </JFXTextField>
-                  <JFXButton fx:id="register_login_btn" layoutX="246.0" layoutY="198.0" onAction="#loginAct" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0747A6;" text="LogIn" textFill="WHITE">
+                  <JFXButton fx:id="register_login_btn" layoutX="244.0" layoutY="190.0" onAction="#loginAct" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0747A6;" text="LogIn" textFill="WHITE">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="register_login_cancel_btn" layoutX="164.0" layoutY="198.0" onAction="#login_cancel_act" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0747A6;" text="Cancel" textFill="WHITE">
+                  <JFXButton fx:id="register_login_cancel_btn" layoutX="162.0" layoutY="190.0" onAction="#login_cancel_act" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #0747A6;" text="Cancel" textFill="WHITE">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </JFXButton>
-                  <MaterialDesignIconView fill="#0747a6" glyphName="ACCOUNT" layoutX="68.0" layoutY="131.0" size="22.0" />
-                  <MaterialDesignIconView fill="#0747a6" glyphName="KEY" layoutX="68.0" layoutY="170.0" size="22.0" />
-                  <JFXRadioButton layoutX="58.0" layoutY="70.0" text="Main">
+                  <MaterialDesignIconView fill="#0747a6" glyphName="ACCOUNT" layoutX="55.0" layoutY="124.0" size="22.0" />
+                  <MaterialDesignIconView fill="#0747a6" glyphName="KEY" layoutX="55.0" layoutY="163.0" size="22.0" />
+                  <JFXRadioButton layoutX="45.0" layoutY="63.0" text="Main">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -189,7 +189,7 @@
                         <ToggleGroup fx:id="register_rype_toggle" />
                      </toggleGroup>
                   </JFXRadioButton>
-                  <JFXRadioButton layoutX="185.0" layoutY="70.0" text="Sub Register" toggleGroup="$register_rype_toggle">
+                  <JFXRadioButton layoutX="172.0" layoutY="63.0" text="Sub Register" toggleGroup="$register_rype_toggle">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -200,7 +200,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <JFXPasswordField layoutX="99.0" layoutY="146.0" prefHeight="25.0" prefWidth="217.0" promptText="Password" styleClass="prompt">
+                  <JFXPasswordField layoutX="86.0" layoutY="139.0" prefHeight="25.0" prefWidth="230.0" promptText="Password" styleClass="prompt">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -240,12 +240,12 @@
             </AnchorPane>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="admin_dashboard" layoutY="60.0" prefHeight="420.0" prefWidth="800.0" style="-fx-background-color: white;">
+      <AnchorPane fx:id="admin_dashboard" layoutY="60.0" prefHeight="420.0" prefWidth="800.0" style="-fx-background-color: white;" visible="false">
          <children>
             <AnchorPane prefHeight="420.0" prefWidth="182.0" style="-fx-background-color: #0747A6;">
                <children>
                   <Line endX="217.0" layoutY="175.0" stroke="GREY" />
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="28.0" layoutY="48.0" prefHeight="34.0" prefWidth="163.0" styleClass="menu" text="Manage Register" textFill="WHITE">
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="28.0" layoutY="48.0" prefHeight="34.0" prefWidth="163.0" styleClass="menu" text="Manage Admin" textFill="WHITE">
                      <graphic>
                         <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_PLUS" size="14.0" />
                      </graphic>
@@ -262,7 +262,7 @@
                         </Label>
                      </children>
                   </Pane>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="28.0" layoutY="88.0" prefHeight="34.0" prefWidth="163.0" styleClass="menu" text=" Add Register" textFill="WHITE">
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="28.0" layoutY="88.0" prefHeight="34.0" prefWidth="163.0" styleClass="menu" text="Manage Register" textFill="WHITE">
                      <graphic>
                         <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_PLUS" size="14.0" />
                      </graphic>
@@ -270,9 +270,9 @@
                         <Font size="13.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton alignment="BASELINE_LEFT" layoutX="28.0" layoutY="128.0" prefHeight="34.0" prefWidth="163.0" styleClass="menu" text=" Add Register" textFill="WHITE">
+                  <JFXButton alignment="BASELINE_LEFT" layoutX="28.0" layoutY="128.0" prefHeight="34.0" prefWidth="163.0" styleClass="menu" text="Log Out" textFill="WHITE">
                      <graphic>
-                        <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_PLUS" size="14.0" />
+                        <MaterialDesignIconView fill="WHITE" glyphName="CLIPBOARD_CHECK" size="14.0" />
                      </graphic>
                      <font>
                         <Font size="13.0" />
@@ -284,7 +284,7 @@
                <children>
                   <AnchorPane layoutX="14.0" layoutY="32.0" prefHeight="246.0" prefWidth="272.0" style="-fx-background-color: #f7f7f7;">
                      <children>
-                        <JFXButton layoutX="164.0" layoutY="180.0" prefHeight="30.0" prefWidth="66.0" style="-fx-background-color: #0747A6;" text=" Add" textFill="WHITE">
+                        <JFXButton fx:id="register_reg_btn" layoutX="164.0" layoutY="180.0" onAction="#adminAct" prefHeight="30.0" prefWidth="66.0" style="-fx-background-color: #0747A6;" text=" Add" textFill="WHITE">
                            <graphic>
                               <FontAwesomeIconView fill="WHITE" glyphName="PLUS_SQUARE" size="14.0" />
                            </graphic>
@@ -292,7 +292,7 @@
                               <Font size="14.0" />
                            </font>
                         </JFXButton>
-                        <JFXTextField labelFloat="true" layoutX="27.0" layoutY="33.0" prefHeight="25.0" prefWidth="203.0" promptText="Register Username" styleClass="promptd">
+                        <JFXTextField fx:id="register_username_input" labelFloat="true" layoutX="27.0" layoutY="33.0" prefHeight="25.0" prefWidth="203.0" promptText="Register Username" styleClass="promptd">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -305,12 +305,12 @@
                            </font>
                         </Label>
                         <FontAwesomeIconView fx:id="addst_warning_close" fill="#ff1645" glyphName="CLOSE" layoutX="24.0" layoutY="172.0" size="14.0" visible="false" />
-                        <JFXPasswordField labelFloat="true" layoutX="27.0" layoutY="82.0" prefHeight="25.0" prefWidth="203.0" promptText="Register Password" styleClass="prompt">
+                        <JFXPasswordField fx:id="register_password_input" labelFloat="true" layoutX="27.0" layoutY="82.0" prefHeight="25.0" prefWidth="203.0" promptText="Register Password" styleClass="prompt">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </JFXPasswordField>
-                        <JFXPasswordField labelFloat="true" layoutX="27.0" layoutY="131.0" prefHeight="25.0" prefWidth="203.0" promptText="Confirm Password" styleClass="prompt">
+                        <JFXPasswordField fx:id="register_cpassword_input" labelFloat="true" layoutX="27.0" layoutY="131.0" prefHeight="25.0" prefWidth="203.0" promptText="Confirm Password" styleClass="prompt">
                            <font>
                               <Font size="14.0" />
                            </font>

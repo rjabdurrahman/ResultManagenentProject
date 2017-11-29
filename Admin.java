@@ -1,5 +1,7 @@
 package resultmanagement;
 
+import javafx.collections.ObservableList;
+
 public class Admin{
     private int id;
     private String username;
@@ -10,8 +12,8 @@ public class Admin{
         this.username = username;
         this.password = password;
     }
-    public Register manageRegister(String username,String password){
-        return (new Register(121,username,password));
+    public void manageRegister(String username,String password,ObservableList<Register> rlist){
+        rlist.add(new Register(121,username,password));
     }
     public void manageRegister(){
         //here
