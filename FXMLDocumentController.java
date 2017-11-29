@@ -30,19 +30,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private AnchorPane admin_dashboard, register_dashboard;
-
-    @FXML
-    private JFXTextField admin_username_field;
-
-    @FXML
-    private JFXPasswordField admin_password_field;
-
-    @FXML
-    private JFXButton admin_login_btn, register_login_btn;
-
-    @FXML
-    private JFXButton admin_login_cancel_btn, admin_login_close_btn, register_login_cancel_btn, register_login_close_btn;
-
+    
     @FXML
     private ToggleGroup admin_rype_toggle, register_rype_toggle;
 
@@ -64,7 +52,16 @@ public class FXMLDocumentController implements Initializable {
             register_login_panel.setVisible(true);
         }
     }
+    
+    @FXML
+    private JFXButton admin_login_btn, register_login_btn;
+    
+    @FXML
+    private JFXTextField admin_username_field;
 
+    @FXML
+    private JFXPasswordField admin_password_field;
+    
     //Login Button Action
     @FXML
     void loginAct(ActionEvent event) {
@@ -80,6 +77,9 @@ public class FXMLDocumentController implements Initializable {
             }
         }
     }
+    
+    @FXML
+    private JFXButton admin_login_cancel_btn, admin_login_close_btn, register_login_cancel_btn, register_login_close_btn;
 
     //Cancel Button Action
     @FXML
@@ -91,7 +91,7 @@ public class FXMLDocumentController implements Initializable {
         }
 
     }
-
+    //Register Buttion Action
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 

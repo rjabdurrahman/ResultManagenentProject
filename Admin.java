@@ -10,6 +10,9 @@ public class Admin{
         this.username = username;
         this.password = password;
     }
+    public Register manageRegister(String username,String password){
+        return (new Register(121,username,password));
+    }
     public void manageRegister(){
         //here
     }
