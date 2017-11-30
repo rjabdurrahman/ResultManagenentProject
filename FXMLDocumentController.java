@@ -35,8 +35,8 @@ public class FXMLDocumentController implements Initializable {
     private ToggleGroup admin_rype_toggle, register_rype_toggle;
 
     //Login
-    public boolean login(String username, String password) {
-        if (username.equals(admin.getUsername()) && password.equals(admin.getPassword())) {
+    public boolean login(String username, String password, User user) {
+        if (username.equals(user.getUsername()) && password.equals(user.getPassword())) {
             return true;
         } else {
             return false;
@@ -66,7 +66,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     void loginAct(ActionEvent event) {
         if (event.getSource() == admin_login_btn) {
-            if (login(admin_username_field.getText(),admin_password_field.getText())) {
+            if (login(admin_username_field.getText(),admin_password_field.getText(),admin)) {
                 admin_login_panel.setVisible(false);
                 admin_dashboard.setVisible(true);
             }

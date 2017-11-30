@@ -1,15 +1,11 @@
 package resultmanagement;
 
-public class Register{
-    private int id;
-    private String username;
-    private String password;
+public class Register extends User{
 
     public Register(int id, String username, String password) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
+        super(id, username, password);
     }
+    
     public void addCourses(){
         //here
     }
@@ -24,14 +20,6 @@ public class Register{
     }
     public void regTeacherCourses(){
         //here
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public String getPassword() {
-        return password;
     }
     
 }
